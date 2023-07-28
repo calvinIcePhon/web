@@ -1,0 +1,207 @@
+html body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+/*scroll bar style*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(87, 87, 87);
+  border-radius: 10px;
+  height: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0c0c0c;
+}
+
+#top_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#Profile {
+  position: relative;
+  border: 2px solid red;
+  width: 20%;
+}
+
+#Search {
+  border: 2px solid red;
+  width: 40%;
+  margin-left: 10%;
+}
+
+#top_addButton {
+  position: absolute;
+  border: 2px solid red;
+  width: 20%;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+#footer {
+  bottom: 0;
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+
+.task_card_container {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+  min-width: 200px;
+  background-color: yellow;
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgb(180, 169, 169);
+}
+
+.task_card{
+  display: flex;
+  flex-direction: row;
+}
+
+.taskTitle{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between
+}
+
+.taskContainerPlusButton{
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.task_card_header{
+  background-color: blue;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.task_card_detail{
+  height: 50%;
+}
+
+.task_card_footer{
+  background-color: greenyellow;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+/*=======================================================================*/
+/*column view*/
+
+.contentColumn {
+
+  margin-top: 100px;
+  height: calc(100dvh + 200px);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  padding-top: 5%;
+}
+
+
+.taskContainerWrapperColumn {
+  background-color: green;
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskContainerColumn {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  width: auto;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*=======================================================================*/
+/*row view*/
+.contentRow {
+  margin-top: 100px;
+  height: calc(100dvh + 200px);
+  width: 100%;
+}
+
+.taskWrapperRow{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskContainerWrapperRow {
+  min-width: 450px;
+  background-color: green;
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.taskContainerRowToday {
+  /* white-space: nowrap; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: beige;
+  width: 100%;
+  height: auto;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-bottom: 20px;
+  padding-bottom: 10px; /* Add some padding at the bottom for better aesthetics */
+
+
+}
